@@ -1,0 +1,32 @@
+This folder contains the complete set of Jupyter Notebook files and trained models required to run 
+and reproduce the PurePINNs framework.
+
+1. LIDRePurePINNs.ipynb — Model Training Notebook
+This Jupyter Notebook is used to train the PurePINNs model from scratch.
+Users can modify various hyperparameters, such as learning rate, network architecture, number of layers,
+number of neurons,batch size, and training epochs.
+The notebook allows users to customize the training process according to their computational resources and 
+accuracy requirements.
+This notebook is intended for users who wish to train their own models, experiment with different configurations, 
+or extend the method to other flow configurations.
+
+2. LIDRePurePINNs.keras — Pre-trained Model
+This file contains a pre-trained PurePINNs model saved in Keras format.
+The model has already been trained using the methodology described in the paper.
+Users who do not want to spend time or computational resources on training can directly load this model.
+The trained network can predict velocity and pressure fields for a wide range of Reynolds numbers.
+
+3. Load_Model_PurePINNs.ipynb — Model Loading and Prediction Notebook
+This Jupyter Notebook is used to load the pre-trained model (LIDRePurePINNs.keras) and perform predictions.
+It demonstrates how to load the trained network.
+The notebook computes the predicted flow fields and visualizes the PINNs-based results, such as velocity components
+and pressure distribution.
+This file is particularly useful for quick testing, validation, and demonstration purposes.
+
+Reference to Published Work
+The results generated using this code are reported in the research paper:
+“A Parameterized Physics-Informed Neural Network Solver for the Navier–Stokes Equations Across Reynolds Numbers”
+Available on arXiv: arXiv:2602.04670
+Currently being prepared for submission to Physics of Fluids
+This repository provides the complete implementation used to generate the results presented in the paper, 
+enabling full reproducibility and further research development.
