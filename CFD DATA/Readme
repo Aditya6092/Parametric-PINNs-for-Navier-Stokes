@@ -1,0 +1,8 @@
+This folder contains CFD data for the test cases used in the paper 
+“A Parameterized Physics-Informed Neural Network Solver for the Navier–Stokes Equations Across Reynolds Numbers.”
+The data were generated using OpenFOAM 12 and validated against reference data from the literature by Cortes and Miller (1993).
+Each CSV file is named according to the corresponding Reynolds number (for example, DataRe100.csv corresponds to Re = 100).
+Every file contains five columns: x, y, u, v, and p.
+For the pure PINN approach, the entire dataset is used for validation. 
+For the hybrid PINN approach, sparse data in the range 750 < Re < 850 are used during training, 
+while the remaining data are employed to validate the trained hybrid PINN model.
