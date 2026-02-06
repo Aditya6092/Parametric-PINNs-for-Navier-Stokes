@@ -1,0 +1,29 @@
+This folder contains the complete set of Jupyter Notebook files and trained models required to run and reproduce
+the HybridPINNs framework. Unlike PurePINNs, the HybridPINNs approach incorporates sparse CFD data along with physical 
+constraints during the training process to further enhance accuracy and convergence.
+
+1. LIDReHybridPINNs.ipynb — Model Training Notebook
+This Jupyter Notebook is used to train the HybridPINNs model.
+Users can modify various hyperparameters, including learning rate, network depth, number of neurons, batch size, and 
+number of epochs.
+The training process utilizes a combination of:
+Physics-based constraints from the incompressible Navier–Stokes equations, and
+Sparse CFD-generated data, which guides the model toward improved accuracy and faster convergence.
+This hybrid strategy combines the advantages of data-driven learning and physics-based modeling.
+
+2. LIDReHybridPINNs.keras — Pre-trained Model
+This file contains a pre-trained HybridPINNs model saved in Keras format.
+The model has already been trained using sparse CFD data and physical constraints.
+Users can directly load this model to obtain predictions without retraining.
+The trained network predicts velocity and pressure fields for a wide range of Reynolds numbers.
+
+3. Load_Model_HybridPINNs.ipynb — Model Loading and Prediction Notebook
+This Jupyter Notebook is used to load the pre-trained model (LIDReHybridPINNs.keras) and perform predictions.
+It demonstrates how to load the trained model.
+The notebook computes and visualizes the HybridPINNs-based predictions, including velocity components and pressure fields.
+This file is useful for quick testing, validation, and visualization of results.
+
+Reference to Published Work
+The results generated using this code are reported in the paper:
+“A Parameterized Physics-Informed Neural Network Solver for the Navier–Stokes Equations Across Reynolds Numbers”,
+which is available on arXiv: arXiv:2602.04670 and is currently being prepared for submission to Physics of Fluids.
