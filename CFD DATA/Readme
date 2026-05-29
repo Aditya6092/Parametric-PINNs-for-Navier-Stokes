@@ -1,5 +1,5 @@
 This folder contains CFD data for the test cases used in the paper 
-“A Parameterized Physics-Informed Neural Network Solver for the Navier–Stokes Equations Across Reynolds Numbers.”
+“Sparse-Supervised Hybrid Parameterized Physics-Informed Neural Networks for Incompressible Flows Across Reynolds Numbers.”
 The data were generated using OpenFOAM 12 and validated against reference data from the literature by Cortes and Miller (1993).
 Each CSV file is named according to the corresponding Reynolds number (for example, DataRe100.csv corresponds to Re = 100).
 Every file contains five columns: x, y, u, v, and p.
