@@ -1,4 +1,4 @@
-This folder contains CFD data for the test cases used in the paper 
+This folder contains CFD data for the test case (LID Driven Cavity ) used in the paper 
 “Sparse-Supervised Hybrid Parameterized Physics-Informed Neural Networks for Incompressible Flows Across Reynolds Numbers.”
 The data were generated using OpenFOAM 12 and validated against reference data from the literature by Cortes and Miller (1993).
 Each CSV file is named according to the corresponding Reynolds number (for example, DataRe100.csv corresponds to Re = 100).
