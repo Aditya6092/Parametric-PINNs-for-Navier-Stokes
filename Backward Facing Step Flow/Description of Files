@@ -23,7 +23,13 @@ The notebook computes the predicted flow fields and visualizes the PINNs-based r
 and pressure distribution.
 This file is particularly useful for quick testing, validation, and demonstration purposes.
 
-4. CFD DATA BFS folder contains csv files for CFD data which are generated using OpenFOAM-12.
+4. CFD DATA BFS folder
+This folder contains CFD data for the test cases used in the paper 
+“Sparse-Supervised Hybrid Parameterized Physics-Informed Neural Networks for Incompressible Flows Across Reynolds Numbers.”
+The data were generated using OpenFOAM-12 and validated against reference data from the literature by Armaly et al. (1983).
+Each CSV file is named according to the corresponding Reynolds number (for example, BFSDataRe100.csv corresponds to Re = 100).
+Every file contains five columns: x, y, u, v, and p.
+For the pure PINN approach, the entire dataset is used for validation.
 
 Reference to Published Work
 The results generated using this code are reported in the research paper:
