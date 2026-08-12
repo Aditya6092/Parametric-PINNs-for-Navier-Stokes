@@ -8,6 +8,6 @@ The results generated using this code are reported in the following peer-reviewe
 
 DOI: 10.1063/5.0326675
 
-Preprint: arXiv:2602.04670
+Preprint: https://doi.org/10.1063/5.0326675
 
 The repository is intended to support reproducibility of the computational experiments and provide a foundation for further research in physics-informed machine learning, computational fluid dynamics, and data-efficient scientific computing.
